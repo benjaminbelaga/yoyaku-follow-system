@@ -1,0 +1,107 @@
+/* YOYAKU Follow System Styles */
+.yfs-follow-button {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: 1px solid transparent; /* Make it transparent or match theme button outlines */
+    padding: 2px 4px; /* Small padding for icon buttons */
+    cursor: pointer;
+    color: var(--theme-text-color); /* Inherit theme's text color */
+    margin-left: 5px;
+    line-height: 1; /* Important for icon alignment */
+    vertical-align: middle; /* Align with text if next to it */
+}
+
+.yfs-follow-button svg.yfs-icon {
+    width: 1em; /* Relative to parent font-size */
+    height: 1em;
+    fill: currentColor;
+}
+
+.yfs-follow-button:hover,
+.yfs-follow-button:focus {
+    color: var(--theme-link-hover-color); /* Use theme's hover color */
+    outline: none;
+}
+
+.yfs-follow-button.is-loading {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.yfs-follow-button.is-following svg.yfs-icon {
+    /* Example: change color if following, or use the 'icon-eye-subscribed' if different style */
+    fill: var(--theme-palette-color-1); /* Example active color */
+}
+
+.yfs-follow-button .yfs-button-text {
+    margin-left: 0.3em;
+}
+.yfs-follow-button .yfs-button-text.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+
+/* Taxonomy Archive Page Button */
+.yfs-taxonomy-archive-follow {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.yfs-taxonomy-archive-follow .yfs-follow-button {
+    padding: 8px 12px; /* Larger padding for page-level button */
+    border: 1px solid var(--theme-button-border-initial-color, #555);
+    border-radius: var(--theme-button-border-radius, 3px);
+    background-color: var(--theme-button-background-initial-color, #333);
+    color: var(--theme-button-text-initial-color, #eee);
+}
+.yfs-taxonomy-archive-follow .yfs-follow-button:hover {
+    background-color: var(--theme-button-background-hover-color, #444);
+    color: var(--theme-button-text-hover-color, #fff);
+    border-color: var(--theme-button-border-hover-color, #777);
+}
+.yfs-taxonomy-archive-follow .yfs-follow-button.is-following {
+    background-color: var(--theme-palette-color-1); /* Use a distinct "active/following" color */
+    border-color: var(--theme-palette-color-1);
+    color: var(--theme-palette-color-4); /* Text color for active state */
+}
+.yfs-taxonomy-archive-follow .yfs-follow-button svg.yfs-icon {
+     width: 1.2em;
+     height: 1.2em;
+}
+
+
+/* Single Product Meta Buttons */
+.yfs-product-meta-follow {
+    margin-bottom: 0.5em;
+    line-height: 1.8;
+}
+.yfs-product-meta-follow .yfs-meta-term-name {
+    margin-right: 0.5em;
+}
+
+/* Loop Buttons - you'll need to adjust these to fit into your theme's product card layout */
+.yfs-loop-follow-wrapper {
+    display: inline-flex; /* or block, depending on desired layout */
+    gap: 5px; /* space between multiple follow buttons if a product has multiple artists/labels */
+    margin-left: 5px; /* space from the term name */
+}
+
+.yfs-loop-follow-wrapper .yfs-follow-button {
+    padding: 0; /* Icon only usually */
+    border: none;
+}
+.yfs-loop-follow-wrapper .yfs-follow-button svg.yfs-icon {
+    width: 14px; /* Smaller for loop items */
+    height: 14px;
+}
