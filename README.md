@@ -1,6 +1,8 @@
-# Yoyaku Follow System
+# YTSA
 
-A custom WordPress plugin to manage tracking features for the Yoyaku Record Store.
+A custom WordPress plugin to manage taxonomy follow alerts for the Yoyaku Record Store.
+
+Developed by [Benjamin Belaga](https://github.com/benjaminbelaga).
 
 ## Features
 
@@ -10,7 +12,7 @@ A custom WordPress plugin to manage tracking features for the Yoyaku Record Stor
 
 ## Installation
 
-1. Upload the `yoyaku-follow-system` folder to `/wp-content/plugins/`
+1. Upload the `ytsa` folder to `/wp-content/plugins/`
 2. Activate via the Plugins menu in WordPress
 
 ## Folder Structure
